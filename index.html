@@ -248,7 +248,7 @@ Dios tiene grandes planes para ti. </h2>
               <div class="row">
                 <div class="col-md-6 tm-contact-left">
 
-                  <form id="contactForm" action="https://formspree.io/f/infanteluis72@gmail.com" method="POST" class="contact-form">
+                  <form id="contactForm"  class="contact-form" action="https://formspree.io/f/myzwqvww" method="POST">
                     <div class="input-group tm-mb-30">
                       <input name="name" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Nombre" required>
                     </div>
@@ -262,8 +262,6 @@ Dios tiene grandes planes para ti. </h2>
                       <button type="submit" class="btn btn-primary tm-btn-pad-2">Enviar</button>
                     </div>
                     
-                    <!-- Campo oculto para redirección después del envío -->
-          <input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
               </form>
      
                 </div>
@@ -313,6 +311,28 @@ Dios tiene grandes planes para ti. </h2>
       Síguenos en Instagram
     </a>
   </section>
+
+    <script>
+    const $form = document.querySelector('#contactForm')
+
+    $form.addEventListener ('submit', handlesubmit)
+
+    async function handlesubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+      const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      if (response.ok) {
+        this.reset()
+        alert ('Gracias por contactarnos, pronto nos comunicaremos con usted. ¡Dios le Bendiga!')
+      }
+    }
+  </script>
   
   <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
   <div id="loader-wrapper">
