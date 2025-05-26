@@ -609,7 +609,12 @@ figure.effect-julia:hover p {
     }
 }
 
-
+/* Preloader 
+	https://ihatetomatoes.net/create-custom-preloading-screen/
+*/
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
    #loader-wrapper { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 2000; }
    #loader { display: block; position: relative; left: 50%; top: 50%; width: 150px; height: 150px; margin: -75px 0 0 -75px; border-radius: 50%; border: 3px solid transparent; border-top-color: #3498db; /* Chrome, Opera 15+, Safari 5+ */
    	animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */ z-index: 2001; }
@@ -658,11 +663,10 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 /*============ Preloader ends ==================================*/
 
 
-
 /* Botón de WhatsApp */
 .whatsapp-button {
     position: fixed;
-    bottom: 20px;
+    bottom: 20px; /* Ajustado para dejar espacio para el botón de WhatsApp */
     right: 20px;
     z-index: 1000;
     animation: pulse 1.5s infinite;
@@ -693,8 +697,8 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 /* Botón de Instagram */
 .instagram-button {
     position: fixed;
-    bottom: 60px; /* Ajustado para dejar espacio para el botón de WhatsApp */
-    right: 20px;
+    bottom: 80px; /* Ajustado para dejar espacio para el botón de WhatsApp */
+    right: 30px;
     z-index: 1000;
     animation: pulse 1.5s infinite;
 }
@@ -722,7 +726,6 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 }
 
 
-
 /* Estilo para la imagen del logo */
 .navbar-brand .navbar-logo {
   height: 60px; /* Altura de la imagen */
@@ -741,3 +744,4 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
     height: 30px; /* Reducir el tamaño del logo en pantallas pequeñas */
   }
 }
+
